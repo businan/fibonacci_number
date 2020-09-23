@@ -1,0 +1,71 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("./image/fibonacci.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body a {
+  color: wheat;
+  text-decoration: none;
+  position: fixed;
+  top: 20px;
+  left: 50px;
+  font-size: 18px;
+}
+body a:hover {
+  color: white;
+}
+body .container {
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .container .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .main input {
+  height: 30px;
+  width: 150px;
+  margin-right: 10px;
+  font-size: 20px;
+  background-color: #fb5951;
+  border: none;
+  color: #e9d9d9;
+  padding-left: 10px;
+  border-radius: 2px;
+}
+body .container .main input:focus {
+  outline: none;
+}
+body .container .main button {
+  height: 34px;
+  width: 75px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #460f0f;
+  color: #e9d9d9;
+  border-radius: 2px;
+  border: none;
+}
+body .container .main button:hover {
+  background-color: white;
+  color: #460f0f;
+}
+body .container .main button:focus {
+  outline: none;
+}
+body .container p {
+  width: 40%;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

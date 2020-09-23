@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Fibonacci Number</title>
 </head>
 
 <body>
+    <a href="http://www.fibonaccilifechart.com/blog/10-things-you-need-to-know-about-fibonacci-numbers" target="_blank">
+        10 THINGS YOU NEED TO KNOW ABOUT FIBONACCI NUMBERS</a>
     <div class="container">
-        <input type="number" name="number" id="fibonacci_number">
-        <button onclick="check();">Check</button>
+        <div class="main">
+            <input type="number" name="number" id="fibonacci_number">
+            <button onclick="check();reset();">Check</button>
+
+        </div>
         <p id="result"></p>
     </div>
-<script src="myScript.js"></script>
+    <script src="myScript.js"></script>
 </body>
 
 </html>
