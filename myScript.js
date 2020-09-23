@@ -1,7 +1,9 @@
 function check() {
     const number = document.getElementById("fibonacci_number").value;
     console.log(Number.isInteger(+number))
-    if (number !== "") {
+    if (parseInt(number)<1) {
+        document.getElementById("result").innerHTML = "Input field must be Pozitif Number...";
+    }else if (number !== "" ) {
         let fibonacciArray = []
         for (let i = 0; i < parseInt(number) + 2; i++) {
             if (fibonacciArray.length === 0) {
@@ -19,7 +21,7 @@ function check() {
         console.log(fibonacciArray[fibonacciArray.length - 1])
         let result = fibonacciArray[fibonacciArray.length - 1];
         document.getElementById('result').innerHTML = "The " + number + " th fibonacci number is " + result;
-    } else {
+    }else {
         document.getElementById("result").innerHTML = "Input field must be Entered...";
     }
 
